@@ -1,16 +1,68 @@
-<div class="wrapper">
-  <form class="login">
-    <p class="title">Log in</p>
-    <input type="text" placeholder="Username" autofocus/>
-    <i class="fa fa-user"></i>
-    <input type="password" placeholder="Password" />
-    <i class="fa fa-key"></i>
-    <a href="#">Forgot your password?</a>
-    <button>
-      <i class="spinner"></i>
-      <span class="state">Log in</span>
-    </button>
-  </form>
-  <footer><a target="blank" href="http://boudra.me/">boudra.me</a></footer>
-  </p>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<style>
+	.menu {
+		width: 20%;
+		height: 25px;
+		float: left;
+		padding: 10px;	
+		text-align: center;
+		background: #fff;
+		color: color: #000;
+	}
+	.menu:hover {
+		background: #000;
+		color: #fff;	
+	}
+	#content {
+		clear: both;
+		background: #e5e5e5;
+		padding: 0;
+		overflow-y: scroll;
+		width: 100%;
+		height: 600px;
+		border: 0;
+	}
+</style>
+</head>
+<body>
+<div id="main">
+	<div id="nav">
+		<div id="menu1" class="menu">Page 1</div>
+		<div id="menu2" class="menu">Page 2</div>
+		<div id="menu3" class="menu">Yoytec</div>
+		<div id="menu4" class="menu">Expedia</div>
+	</div>
+	<iframe id="content" src="http://www.google.com">iFrames not supported</iframe>
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(e) {
+		$('#menu1').on('click', function(){
+			
+			$('#content').attr('src', 'page1.html');
+		});
+		$('#menu2').on('click', function(){
+			$('#content').attr('src', 'page2.html');
+			
+		});
+		$('#menu3').on('click', function(){		
+			$('#content').attr('src', 'https://yoytec.com');
+			
+		});
+		$('#menu4').on('click', function(){		
+			$('#content').attr('src', 'https://expedia.com');
+			     /* 
+     location.assign("New_WebSite_Url"); 
+     //Use assign() instead of replace if you want to have the first page in the history (i.e if you want the user to be able to navigate back when New_WebSite_Url is loaded) 
+     */ 
+		});
+		
+		
+	});
+</script>
+</body>
+</html>
