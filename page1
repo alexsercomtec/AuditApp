@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Details Form</title>
+   </head>
+   <body style="background-color:#E6E6FA">
+      <h1 style="margin-left:580px;color:red;"> Form</h1>
+ 
+      <form action="#" id='testform' name='testform' >
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>First Name</div>
+         <input type='text' name='first' id='first' class='required'>
+         <br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Last Name</div>
+         <input type='text' name='last' id='last' class="required">
+         <span id='lasterror' style="margin-left:120px;"></span><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Father's Name</div>
+         <input type='text' name='fname' class="required"><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Dob</div>
+         <input type='text' name='dob' id='dob' class="required">
+         <span id='doberror' style="margin-left:120px;"></span><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Gender</div>
+         <span> <input type='radio' name='gender' value='0'>male
+         <input type='radio' name='gender' value='1' >female</span><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Address</div>
+         <input type='text' name='address' class="required"><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>State</div>
+         <select  name='dropbox'>
+         <option value='ap' >ap</option>
+         <option value='tml' >tml</option>
+         </select><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Pincode</div>
+         <input type='text' name='address' class="required"><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>EMail</div>
+         <div><input type='text' name='first' class="required email"></div>
+         <br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Phone Number</div>
+         <input type='text' name='address' class="required"><br><br>
+ 
+         <div style='margin-left:500px;width:120px;float:left;color:red;'>Languages</div>
+         <input type='checkbox' name=telugu>telugu
+         <input type='checkbox' name='hindi' >hindi
+         <input type='checkbox' name='english'>english<br><br>
+         <div>
+           <center><button type='submit' value='submit' id="submit" >submit</button></center>
+         </div>
+      </form>
+   </body>
+</html>
